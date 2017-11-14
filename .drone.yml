@@ -13,12 +13,12 @@ pipeline:
 
   testing:
     image: node:8.6.0
-    group: testing
+    group: g1
     commands:
       - yarn run test
 
   lint:
     image: node:8.6.0
-    group: testing
+    group: g1
     commands:
       - yarn run lint
